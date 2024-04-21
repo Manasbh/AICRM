@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Dashboard from './dashboard/dashboard.jsx';
 import App from './App.jsx';
 import './index.css';
 import { ClerkProvider } from '@clerk/clerk-react';
-import { toByteArray } from 'base64-js';
 
 const publishableKey = 'pk_test_dXAtZHJha2UtMzAuY2xlcmsuYWNjb3VudHMuZGV2JA';
 

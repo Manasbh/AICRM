@@ -1,22 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import Dashboard from './dashboard/dashboard';
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <header>
+  return (           
+  <div className="clerk">
     <SignedOut>
-      <SignInButton />
+      <SignInButton className="btn">Sign In</SignInButton>
     </SignedOut>
     <SignedIn>
       <UserButton />
     </SignedIn>
-  </header>
-  )
+  </div>
+ )
 }
 
 export default App
